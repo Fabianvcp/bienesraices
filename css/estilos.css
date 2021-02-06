@@ -1,58 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-
-/** Globales **/
-
-* {
-    box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-/*Header*/
-
-.site-header.inicio {
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 600px;
-}
-
-.barra {
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-}
-
-
-/** Navegacion **/
-
-.navegacion a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-}
-
-.navegacion a:hover {
-    color: #71B100;
-}
-
-.navegacion a:last-of-type {
-    margin: 0;
-}
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+            html {
+                font-size: 62.5%;
+                /** Reset para REMS - 62.5% = 10px de 16px**/
+            }
+            
+            body {
+                font-family: 'Noto Sans', sans-serif;
+            }
+            
+            h1 {
+                font-size: 3.8rem;
+                /**= 38px**/
+            }
+            
+            h2 {
+                font-size: 3.4rem;
+                /**= 34px**/
+            }
+            
+            h3 {
+                font-size: 3rem;
+                /**= 30px**/
+            }
+            
+            h4 {
+                font-size: 2.6rem;
+                /**= 26px**/
+            }
+            /** Globales **/
+            
+            * {
+                box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            
+            .contenedor {
+                max-width: 120rem;
+                /**= 1200px;**/
+                margin: 0 auto;
+            }
+            /*Header*/
+            
+            .site-header.inicio {
+                background-image: url(../img/header.jpg);
+                background-position: center center;
+                background-size: cover;
+                height: 100vh;
+                min-height: 60rem;
+                /**= 600px;**/
+            }
+            
+            .contenido-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .contenido-header h1 {
+                color: white;
+                padding-bottom: 2rem;
+                /**= 20px**/
+                max-width: 60rem;
+                /**= 60px**/
+                line-height: 2;
+            }
+            
+            .barra {
+                display: flex;
+                font-family: 'Times New Roman', Times, serif;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 3rem;
+            }
+            /** Navegacion **/
+            
+            .navegacion a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.8rem;
+                /** = 18px**/
+                margin-right: 2rem;
+                /**= 20px**/
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 500;
+            }
+            
+            .navegacion a:hover {
+                color: #71B100;
+            }
+            
+            .navegacion a:last-of-type {
+                margin: 0;
+            }
