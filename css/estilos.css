@@ -1,0 +1,24 @@
+/** Globales **/
+
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 800vh;
+    min-height: 600px;
+}
